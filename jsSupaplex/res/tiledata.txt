@@ -1,0 +1,298 @@
+###############################################################################
+# Supaplex tile data
+#
+# Author:  Pontus "Frigolit" Rodling <frigolit@frigolit.net>
+# Version: 0.1
+# License: Public domain
+###############################################################################
+
+# Format: file,x,y,name,flags
+#
+# Flags:
+#   0x01    1    Player
+#   0x02    2    Explosive (from stuff falling on top)
+#   0x04    4    Breakable (gets removed by explosions)
+#   0x08    8    Deadly (kills stuff that touches it)
+#   0x10    16   Falling (better wear a hardhat)
+#   0x20    32   Edge (infotrons and zonks falls from this)
+
+# Fixed graphics
+# =============================================================================
+fixed,0,0,empty,4
+fixed,16,0,zonk,52
+fixed,32,0,base,4
+fixed,48,0,murphy,3
+fixed,64,0,infotron,52
+fixed,80,0,chip,36
+fixed,96,0,grey,0
+fixed,112,0,exit,4
+fixed,128,0,disk-orange,2
+fixed,144,0,port-right,0
+fixed,160,0,port-down,0
+fixed,176,0,port-left,0
+fixed,192,0,port-up,0
+fixed,208,0,port-right-gravity,0
+fixed,224,0,port-down-gravity,0
+fixed,240,0,port-left-gravity,0
+fixed,256,0,port-up-gravity,0
+fixed,272,0,sniksnak,2
+fixed,288,0,disk-yellow,2
+fixed,304,0,terminal,4
+fixed,320,0,disk-red,2
+fixed,336,0,port-vertical,0
+fixed,352,0,port-horizontal,0
+fixed,368,0,port-plus,0
+fixed,384,0,electron,6
+fixed,400,0,bug,4
+fixed,416,0,chip-double-left,36
+fixed,432,0,chip-double-right,36
+fixed,448,0,misc-00,4
+fixed,464,0,misc-01-green-led,4
+fixed,480,0,misc-02-blue-led,4
+fixed,496,0,misc-03-red-led,4
+fixed,512,0,misc-04-stripes,4
+fixed,528,0,misc-05,4
+fixed,544,0,misc-06,4
+fixed,560,0,misc-07,4
+fixed,576,0,misc-08,4
+fixed,592,0,misc-09,4
+fixed,608,0,chip-double-top,36
+fixed,624,0,chip-double-bottom,36
+
+# Moving graphics
+# =============================================================================
+
+# Eat left through base (40-55)
+moving,0,0,eat-base-left-0-0,1
+moving,16,0,eat-base-left-1-0,0
+moving,32,0,eat-base-left-0-1,1
+moving,48,0,eat-base-left-1-1,0
+moving,64,0,eat-base-left-0-2,1
+moving,80,0,eat-base-left-1-2,0
+moving,96,0,eat-base-left-0-3,1
+moving,112,0,eat-base-left-1-3,0
+moving,128,0,eat-base-left-0-4,1
+moving,144,0,eat-base-left-1-4,0
+moving,160,0,eat-base-left-0-5,1
+moving,176,0,eat-base-left-1-5,0
+moving,192,0,eat-base-left-0-6,1
+moving,208,0,eat-base-left-1-6,0
+moving,224,0,eat-base-left-0-7,1
+moving,240,0,eat-base-left-1-7,0
+
+# Eat right through base (56-71)
+moving,256,0,eat-base-right-0-0,0
+moving,272,0,eat-base-right-1-0,1
+moving,288,0,eat-base-right-0-1,0
+moving,304,0,eat-base-right-1-1,1
+moving,0,16,eat-base-right-0-2,0
+moving,16,16,eat-base-right-1-2,1
+moving,32,16,eat-base-right-0-3,0
+moving,48,16,eat-base-right-1-3,1
+moving,64,16,eat-base-right-0-4,0
+moving,80,16,eat-base-right-1-4,1
+moving,96,16,eat-base-right-0-5,0
+moving,112,16,eat-base-right-1-5,1
+moving,128,16,eat-base-right-0-6,0
+moving,144,16,eat-base-right-1-6,1
+moving,160,16,eat-base-right-0-7,0
+moving,176,16,eat-base-right-1-7,1
+
+# Walk left (72-87)
+moving,32,32,walk-left-0-0,1
+moving,48,32,walk-left-1-0,0
+moving,64,32,walk-left-0-1,1
+moving,80,32,walk-left-1-1,0
+moving,96,32,walk-left-0-2,1
+moving,112,32,walk-left-1-2,0
+moving,128,32,walk-left-0-3,1
+moving,144,32,walk-left-1-3,0
+moving,160,32,walk-left-0-4,1
+moving,176,32,walk-left-1-4,0
+moving,192,32,walk-left-0-5,1
+moving,208,32,walk-left-1-5,0
+moving,224,32,walk-left-0-6,1
+moving,240,32,walk-left-1-6,0
+moving,256,32,walk-left-0-7,1
+moving,272,32,walk-left-1-7,0
+
+# Walk right (88-103)
+moving,288,32,walk-right-0-0,0
+moving,304,32,walk-right-1-0,1
+moving,0,48,walk-right-0-1,0
+moving,16,48,walk-right-1-1,1
+moving,32,48,walk-right-0-2,0
+moving,48,48,walk-right-1-2,1
+moving,64,48,walk-right-0-3,0
+moving,80,48,walk-right-1-3,1
+moving,96,48,walk-right-0-4,0
+moving,112,48,walk-right-1-4,1
+moving,128,48,walk-right-0-5,0
+moving,144,48,walk-right-1-5,1
+moving,160,48,walk-right-0-6,0
+moving,176,48,walk-right-1-6,1
+moving,192,48,walk-right-0-7,0
+moving,208,48,walk-right-1-7,1
+
+# Eat up through base (104-119)
+frigolit,0,0,eat-base-up-0-0,1
+frigolit,0,16,eat-base-up-1-0,0
+frigolit,16,0,eat-base-up-0-1,1
+frigolit,16,16,eat-base-up-1-1,0
+frigolit,32,0,eat-base-up-0-2,1
+frigolit,32,16,eat-base-up-1-2,0
+frigolit,48,0,eat-base-up-0-3,1
+frigolit,48,16,eat-base-up-1-3,0
+frigolit,64,0,eat-base-up-0-4,1
+frigolit,64,16,eat-base-up-1-4,0
+frigolit,80,0,eat-base-up-0-5,1
+frigolit,80,16,eat-base-up-1-5,0
+frigolit,96,0,eat-base-up-0-6,1
+frigolit,96,16,eat-base-up-1-6,0
+frigolit,112,0,eat-base-up-0-7,1
+frigolit,112,16,eat-base-up-1-7,0
+
+# Eat down through base (120-135)
+frigolit,128,0,eat-base-down-0-0,0
+frigolit,128,16,eat-base-down-1-0,1
+frigolit,144,0,eat-base-down-0-1,0
+frigolit,144,16,eat-base-down-1-1,1
+frigolit,160,0,eat-base-down-0-2,0
+frigolit,160,16,eat-base-down-1-2,1
+frigolit,176,0,eat-base-down-0-3,0
+frigolit,176,16,eat-base-down-1-3,1
+frigolit,192,0,eat-base-down-0-4,0
+frigolit,192,16,eat-base-down-1-4,1
+frigolit,208,0,eat-base-down-0-5,0
+frigolit,208,16,eat-base-down-1-5,1
+frigolit,224,0,eat-base-down-0-6,0
+frigolit,224,16,eat-base-down-1-6,1
+frigolit,240,0,eat-base-down-0-7,0
+frigolit,240,16,eat-base-down-1-7,1
+
+# Walk up (136-151)
+frigolit,0,32,walk-up-0-0,1
+frigolit,0,48,walk-up-1-0,0
+frigolit,16,32,walk-up-0-1,1
+frigolit,16,48,walk-up-1-1,0
+frigolit,32,32,walk-up-0-2,1
+frigolit,32,48,walk-up-1-2,0
+frigolit,48,32,walk-up-0-3,1
+frigolit,48,48,walk-up-1-3,0
+frigolit,64,32,walk-up-0-4,1
+frigolit,64,48,walk-up-1-4,0
+frigolit,80,32,walk-up-0-5,1
+frigolit,80,48,walk-up-1-5,0
+frigolit,96,32,walk-up-0-6,1
+frigolit,96,48,walk-up-1-6,0
+frigolit,112,32,walk-up-0-7,1
+frigolit,112,48,walk-up-1-7,0
+
+# Walk down (152-167)
+frigolit,128,32,walk-down-0-0,1
+frigolit,128,48,walk-down-1-0,1
+frigolit,144,32,walk-down-0-1,1
+frigolit,144,48,walk-down-1-1,1
+frigolit,160,32,walk-down-0-2,1
+frigolit,160,48,walk-down-1-2,1
+frigolit,176,32,walk-down-0-3,1
+frigolit,176,48,walk-down-1-3,1
+frigolit,192,32,walk-down-0-4,1
+frigolit,192,48,walk-down-1-4,1
+frigolit,208,32,walk-down-0-5,1
+frigolit,208,48,walk-down-1-5,1
+frigolit,224,32,walk-down-0-6,1
+frigolit,224,48,walk-down-1-6,1
+frigolit,240,32,walk-down-0-7,1
+frigolit,240,48,walk-down-1-7,1
+
+# Zonk fall down (168-183)
+frigolit,0,64,zonk-fall-down-0-0,0
+frigolit,0,80,zonk-fall-down-1-0,0
+frigolit,16,64,zonk-fall-down-0-1,0
+frigolit,16,80,zonk-fall-down-1-1,0
+frigolit,32,64,zonk-fall-down-0-2,0
+frigolit,32,80,zonk-fall-down-1-2,0
+frigolit,48,64,zonk-fall-down-0-3,0
+frigolit,48,80,zonk-fall-down-1-3,0
+frigolit,64,64,zonk-fall-down-0-4,0
+frigolit,64,80,zonk-fall-down-1-4,0
+frigolit,80,64,zonk-fall-down-0-5,0
+frigolit,80,80,zonk-fall-down-1-5,0
+frigolit,96,64,zonk-fall-down-0-6,0
+frigolit,96,80,zonk-fall-down-1-6,0
+frigolit,112,64,zonk-fall-down-0-7,0
+frigolit,112,80,zonk-fall-down-1-7,0
+
+# Explosion (184-215)
+moving,0,196,explosion-0,8
+moving,0,196,explosion-0,8
+moving,0,196,explosion-0,8
+moving,0,196,explosion-0,8
+moving,16,196,explosion-1,8
+moving,16,196,explosion-1,8
+moving,16,196,explosion-1,8
+moving,16,196,explosion-1,8
+moving,32,196,explosion-2,8
+moving,32,196,explosion-2,8
+moving,32,196,explosion-2,8
+moving,32,196,explosion-2,8
+moving,48,196,explosion-3,8
+moving,48,196,explosion-3,8
+moving,48,196,explosion-3,8
+moving,48,196,explosion-3,8
+moving,64,196,explosion-4,8
+moving,64,196,explosion-4,8
+moving,64,196,explosion-4,8
+moving,64,196,explosion-4,8
+moving,80,196,explosion-5,8
+moving,80,196,explosion-5,8
+moving,80,196,explosion-5,8
+moving,80,196,explosion-5,8
+moving,96,196,explosion-6,8
+moving,96,196,explosion-6,8
+moving,96,196,explosion-6,8
+moving,96,196,explosion-6,8
+moving,112,196,explosion-7,8
+moving,112,196,explosion-7,8
+moving,112,196,explosion-7,8
+moving,112,196,explosion-7,8
+
+# Zonk roll right (216-231)
+moving,0,100,zonk-roll-right,8
+moving,16,100,zonk-roll-right,8
+moving,32,100,zonk-roll-right,8
+moving,48,100,zonk-roll-right,8
+moving,64,100,zonk-roll-right,8
+moving,80,100,zonk-roll-right,8
+moving,96,100,zonk-roll-right,8
+moving,112,100,zonk-roll-right,8
+moving,128,100,zonk-roll-right,8
+moving,144,100,zonk-roll-right,8
+moving,160,100,zonk-roll-right,8
+moving,176,100,zonk-roll-right,8
+moving,192,100,zonk-roll-right,8
+moving,208,100,zonk-roll-right,8
+moving,224,100,zonk-roll-right,8
+moving,240,100,zonk-roll-right,8
+
+# Zonk roll left (232-247)
+moving,0,84,zonk-roll-left,8
+moving,16,84,zonk-roll-left,8
+moving,32,84,zonk-roll-left,8
+moving,48,84,zonk-roll-left,8
+moving,64,84,zonk-roll-left,8
+moving,80,84,zonk-roll-left,8
+moving,96,84,zonk-roll-left,8
+moving,112,84,zonk-roll-left,8
+moving,128,84,zonk-roll-left,8
+moving,144,84,zonk-roll-left,8
+moving,160,84,zonk-roll-left,8
+moving,176,84,zonk-roll-left,8
+moving,192,84,zonk-roll-left,8
+moving,208,84,zonk-roll-left,8
+moving,224,84,zonk-roll-left,8
+moving,240,84,zonk-roll-left,8
+
+# 0 16 32 48 64 80 96 112 128 144 160 176 192 208 224 240 256 272 288 304
+
